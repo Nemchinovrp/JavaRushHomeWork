@@ -14,7 +14,18 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        //напишите тут ваш код
-
+        ArrayList<String> arrayList = new ArrayList<String>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        for(int i=0; i<5; i++){
+            arrayList.add(reader.readLine());
+        }
+        for(int i=0; i<13;i++){
+            String word = arrayList.get(arrayList.size()-1);
+            arrayList.remove(arrayList.size()-1);
+            arrayList.add(0,word);
+        }
+        for(String s : arrayList){
+            System.out.println(s);
+        }
     }
 }

@@ -1,0 +1,29 @@
+package com.javarush.test.level07.lesson06.task01;
+
+import java.util.ArrayList;
+
+/* 5 различных строчек в списке
+1. Создай список строк.
+2. Добавь в него 5 различных строчек.
+3. Выведи его размер на экран.
+4. Используя цикл выведи его содержимое на экран, каждое значение с новой строки.
+*/
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+        ArrayList<String> arrayList = new ArrayList<String>();
+        arrayList.add(0, "jgjg");
+        arrayList.add(1, "jgjgyny");
+        arrayList.add(2, "jgjnyg");
+        arrayList.add(3, "jgynjg");
+        arrayList.add(4, "jgynjg");
+        System.out.println(arrayList.size());
+
+        for(int i=0; i < arrayList.size(); i++){
+            System.out.println(arrayList.get(i));
+        }
+
+
+    }
+}
